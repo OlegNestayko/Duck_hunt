@@ -1,0 +1,63 @@
+/* min css res */
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: crosshair;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+  position: relative;
+  background: url(../img/field.png) 0 0/cover no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.duck {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.counter {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  border: 3px double grey;
+  background-color: #f5f5f5;
+}
+
+.game-over {
+  position: absolute;
+  z-index: 7777;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-size: 52px;
+  font-weight: 700;
+  color: #f5f5f5;
+  background-color: rgba(0, 0, 0, 0.9254901961);
+  -webkit-transform: translateY(-1000px);
+          transform: translateY(-1000px);
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.visible {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
